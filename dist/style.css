@@ -1,0 +1,429 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Anek Latin", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  width: 80%;
+  margin: 0 auto;
+  height: 80px;
+  background: #FFFFFF;
+  display: flex;
+}
+
+.logo {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #661f7c;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.links ul {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links li {
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 130%;
+  font-weight: 900;
+}
+.links a {
+  font-weight: larger;
+}
+.links a:hover {
+  border-bottom: 2px solid #661f7c;
+  padding-bottom: 15px;
+}
+
+.background {
+  background: url("./img/gbr.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+.background .bubble {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  opacity: 0.8;
+  width: 35%;
+}
+.background .message {
+  z-index: 999;
+  color: #FFFFFF;
+  height: 100%;
+  max-width: 500px;
+  width: auto;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 10 auto;
+  padding: 10px;
+  padding-top: 250px;
+}
+.background .message h1 {
+  font-size: 3em;
+  font-weight: bolder;
+  z-index: 999;
+}
+.background .message p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.human-robot {
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  margin: 0 auto;
+  background: linear-gradient(90deg, hsla(286deg, 60%, 30%, 0.9), hsla(190deg, 100%, 50%, 0.8)), url("./img/2.jpg") no-repeat center center/cover;
+  background-size: cover;
+  padding-top: 120px;
+  margin-top: 170px;
+}
+.human-robot .news {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  color: #FFFFFF;
+  font-size: 1.1em;
+  text-align: left;
+}
+.human-robot .news h1 {
+  font-size: 3rem;
+}
+.human-robot button {
+  width: 200px;
+  height: 35px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 2%;
+  color: #FFFFFF;
+  background-color: #661f7c;
+  border: none;
+  border-radius: 5%;
+}
+.human-robot .bubble2 {
+  position: absolute;
+  right: 0;
+  top: 1055px;
+  opacity: 0.8;
+  width: 40%;
+}
+
+.robotic-technologies {
+  width: 100%;
+  height: 700px;
+  padding: 1%;
+  margin-top: 200px;
+  background: linear-gradient(90deg, hsla(286deg, 60%, 30%, 0.9), hsla(190deg, 100%, 50%, 0.8));
+  color: #FFFFFF;
+  text-align: center;
+}
+.robotic-technologies .bubble5 {
+  position: absolute;
+  left: 0;
+  top: 1480px;
+  opacity: 0.9;
+  width: 32%;
+}
+.robotic-technologies .tech-news {
+  width: 100%;
+  height: 80px;
+  font-size: 1.5rem;
+}
+.robotic-technologies .skills {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.robotic-technologies .skills p {
+  font-size: 1.1rem;
+}
+.robotic-technologies .skills h3 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.robotic-technologies .skills h1 {
+  font-size: 1.8rem;
+}
+.robotic-technologies .skills .robotization {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.robotic-technologies .skills .robotization img {
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 50%;
+  opacity: 0.99;
+  margin: 0 auto;
+}
+.robotic-technologies .skills .engineering img {
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 10%;
+  opacity: 0.99;
+}
+.robotic-technologies .skills .industry img {
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 100%;
+  opacity: 0.99;
+  margin: 0 auto;
+}
+
+.quote {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(90deg, hsla(286deg, 60%, 30%, 0.9), hsla(190deg, 100%, 50%, 0.8));
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 1%;
+  text-align: left;
+  color: #FFFFFF;
+}
+.quote .flex {
+  display: inline;
+}
+.quote p {
+  font-size: 1.9rem;
+}
+.quote .altex {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.concept {
+  width: 100%;
+  height: 80px;
+  padding: 1px;
+  margin: 0 auto;
+  background-color: beige;
+  text-align: center;
+}
+
+.perspectives {
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+  padding: 1%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(90deg, hsla(286deg, 60%, 30%, 0.9), hsla(190deg, 100%, 50%, 0.8));
+  color: #FFFFFF;
+  font-size: 1.3rem;
+}
+.perspectives .ai {
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 100px;
+  text-align: left;
+}
+.perspectives .robo-hand {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.perspectives #firstImg {
+  width: 110%;
+}
+.perspectives #secondImg {
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  top: -59px;
+}
+
+footer {
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(90deg, hsla(286deg, 60%, 30%, 0.9), hsla(190deg, 100%, 50%, 0.8));
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1350px) {
+  .background .bubble {
+    width: 40%;
+  }
+
+  .human-robot .bubble2 {
+    position: absolute;
+    top: 765px;
+  }
+
+  .robotic-technologies .bubble5 {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .background {
+    height: auto;
+    padding-bottom: 100px;
+    display: block;
+  }
+  .background .message {
+    width: 50%;
+    z-index: 999;
+  }
+  .background .message h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .background .message p {
+    font-size: 1.1rem;
+  }
+  .background .bubble {
+    width: 30%;
+  }
+
+  .human-robot {
+    height: auto;
+    width: 100%;
+    display: block;
+    padding-bottom: 150px;
+  }
+
+  .news {
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .human-robot .bubble2 {
+    width: 30%;
+    position: absolute;
+    top: 690px;
+  }
+
+  .robotic-technologies .bubble5 {
+    width: 30%;
+    position: absolute;
+    top: 1260px;
+  }
+
+  .robo-hand {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .background .bubble {
+    width: 40%;
+  }
+
+  .perspectives .ai {
+    width: 70%;
+    height: auto;
+  }
+
+  .perspectives {
+    display: block;
+  }
+
+  .quote {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .background .bubble {
+    width: 35%;
+  }
+
+  .quote {
+    height: auto;
+  }
+
+  .robotic-technologies {
+    height: auto;
+  }
+
+  .robotic-technologies .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skills img {
+    width: 60%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .background .bubble {
+    width: 55%;
+    position: absolute;
+    top: 65px;
+  }
+
+  .human-robot .bubble2 {
+    width: 55%;
+    position: absolute;
+    top: 500;
+  }
+
+  .robotic-technologies .bubble5 {
+    width: 40%;
+    position: absolute;
+    top: 1700px;
+  }
+
+  .quote p {
+    font-size: 1.1rem;
+  }
+
+  .perspectives {
+    font-size: 1rem;
+  }
+
+  .skills {
+    display: block;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */
