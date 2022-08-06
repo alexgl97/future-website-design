@@ -1,0 +1,554 @@
+@import "./variables";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anek Latin', sans-serif;
+// font-family: 'Fira Sans', sans-serif;
+// font-family: 'Joan', serif;
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto;
+    height: 80px;
+    background: $primaryWhite;  
+    display: flex; 
+     
+}
+
+.logo{
+    
+    // background: blue;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: $primaryPurple;
+    // font-weight:900;
+    
+    
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.links{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul{
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: 10px;
+        // margin: 10px;
+        // background: black;
+    }
+    
+    li{
+        padding: 10px;
+        margin: 10px auto;
+        font-size: 130%;
+        font-weight: 900;
+       
+        // background: red;
+    }
+    a{
+        font-weight: larger;
+    }
+    a:hover{
+        border-bottom: 2px solid $primaryPurple;
+        padding-bottom: 15px;
+    }
+    
+}
+
+.background{
+    
+    // background-size: 100% ;
+    // background-blend-mode:color-dodge;
+    // background-blend-mode:hard-light;
+    // background-blend-mode:luminosity;
+    // height: 900px;
+    // width: 100%;
+    // background-color: $primaryPurple;
+    
+    // background-image: linear-gradient(to right, #661f7c, #00d4ff), url("./img/bgr.jpeg");
+    // background-size: cover;
+    // opacity: -1;
+    
+    background:
+    // linear-gradient(270deg, $firstColor, $secondColor),
+    url('./img/gbr.jpg') no-repeat center center / cover;
+    // background-position: 50% 50%;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    // color: white;
+    // padding: 20px;
+    
+    // overflow: visible;
+
+    .bubble{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        opacity: 0.8;
+        width: 35%;
+    }
+
+    
+
+
+    
+    .message{
+        z-index: 999;
+        color: $primaryWhite;
+        height: 100%;
+        max-width: 500px;
+        width: auto;
+        // background: red;
+        // height: 500px;
+        // padding: 350px 0 0 350px;\
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin: 10 auto;
+        padding: 10px;
+        padding-top: 250px;
+        h1{
+            font-size: 3em;
+            font-weight: bolder;
+            z-index: 999;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: bolder;
+            
+        }
+    
+     }
+
+   
+    
+}
+
+
+.human-robot{
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    margin: 0 auto;
+    
+    // background-color: $primaryWhite;
+    background:
+    linear-gradient(90deg, $firstColor, $secondColor),url("./img/2.jpg") no-repeat center center / cover;
+    background-size: cover;
+    padding-top: 120px;
+    margin-top: 170px;
+    .news{
+        width: 50%;
+        height: 100%;
+        margin:0 auto;
+        // background-color: red;
+        padding: 20px;
+        color: $primaryWhite;
+        font-size: 1.1em;
+        text-align: left;
+        
+        
+        // color: $primaryWhite;
+        h1{
+            font-size: 3rem;
+        }
+    }
+    button{
+        width: 200px;
+        height: 35px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 2%;
+        // color: $primaryPurple;
+        color: $primaryWhite;
+        background-color: $primaryPurple;
+        border: none;
+        border-radius: 5%;
+    }
+    .bubble2{
+        position: absolute;
+        right: 0;
+        top: 1055px;
+        // z-index: 0;
+        opacity: 0.8;
+        width: 40%;
+    }
+}
+
+.robotic-technologies{
+    width: 100%;
+    height: 700px;
+    padding: 1%;
+    margin-top: 200px;
+    background:
+    linear-gradient(90deg, $firstColor, $secondColor);
+    // background: url("./img/Untitled5.jpg") no-repeat center center;
+    // background-size: cover;
+    // background-color: green;
+    color: $primaryWhite;
+    text-align: center;
+    .bubble5{
+        position: absolute;
+        left: 0;
+        top:1480px;
+        opacity: 0.9;
+        width: 32%;
+    }
+    .tech-news{
+        width: 100%;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+    .skills{
+width:70%;
+height: auto;
+margin: 0 auto;
+padding: 50px;
+text-align: left;
+// background-color: blue;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 50px;
+p{
+    font-size: 1.1rem;
+}
+h3{
+    font-size: 1.5rem;
+    padding: 10px;
+    
+}
+h1{
+    font-size: 1.8rem;
+}
+
+
+
+    .robotization{display: block;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 150px;
+            height: 100px;
+            padding: 5px;
+            border-radius: 50%;
+            opacity: 0.99;
+            margin: 0 auto;
+            
+        }
+
+    }
+
+
+     .engineering {
+        img{
+            width: 150px;
+            height: 100px;
+            padding: 5px;
+            border-radius: 10%;
+            opacity: 0.99;
+        }
+      
+    }
+
+    .industry{
+        img{
+            width: 150px;
+            height: 100px;
+            padding: 5px;
+            border-radius: 100%;
+            opacity: 0.99;
+            margin: 0 auto;
+            
+       
+        }
+    }
+
+
+    }
+    
+}
+.quote{
+    width: 100%;
+    height: 400px;
+    // background: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/3d598ab49dfc5da483778128/bggradient4.jpg") no-repeat center center / cover;
+    background:
+    linear-gradient(90deg, $firstColor, $secondColor);
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 1%;
+    text-align: left;
+    // background-color: aquamarine;
+    color: $primaryWhite;
+    .flex{
+        display: inline;
+    }
+    p{
+        font-size: 1.9rem;
+    }
+    .altex{
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+        // border: 10px solid $primaryWhite;
+    
+    }
+}
+
+.concept{
+    width: 100%;
+    height: 80px;
+    padding:1px;
+    margin: 0 auto;
+    background-color: beige;
+    text-align: center;
+}
+
+.perspectives{
+    width: 100%;
+    height: auto;
+    // margin: 0 auto;
+    margin-top: 150px;
+    padding: 1%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+     gap: 20px;
+     background:
+    linear-gradient(90deg, $firstColor, $secondColor);
+    color: $primaryWhite;
+    font-size: 1.3rem;
+    // #angle{
+    //     width: 250px;
+    //     height: 350px;
+    //     // transform: rotate(90deg);
+    //     position:relative;
+    //     left: 0;
+    //     top: 0;
+    //     display: inline-flex;
+    //  }
+     .ai{
+        width: 50%;
+        margin: 0 auto;
+        height: auto;
+        padding-top: 100px;
+        text-align:left;
+     }
+     
+    .robo-hand{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 50px;
+
+    }
+    #firstImg{
+        width: 110%;
+    }
+    #secondImg{
+        width: 65%;
+        // display: flex;
+        
+        // position: absolute;
+        // top: 3450px;
+        // left: 1000px;
+        margin: 0 auto;
+        position: relative;
+        top: -59px;
+    }
+}
+
+footer{
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background:
+    linear-gradient(90deg, $firstColor, $secondColor);
+    text-align: center;
+    color: $primaryWhite;
+    
+}
+
+@media only screen and (max-width: 1350px) {
+    .background .bubble{
+        width: 40%;
+    }
+
+    .human-robot .bubble2{
+        position: absolute;
+        top: 765px;
+    }
+    .robotic-technologies .bubble5{
+        width: 35%;
+    }
+    
+}
+
+@media only screen and (max-width: 1280px) {
+    .background{
+        // max-width: 100%;
+        // max-height: 100%;
+        height: auto;
+        // width: auto;
+        padding-bottom: 100px;
+        display: block;
+        // background: url('./img/gbr.jpg') no-repeat center center / cover;
+        .message{
+            // display: block;
+            width: 50%;
+            // justify-content: center;
+            // align-items: center;
+            z-index: 999;
+           
+        }
+        .message h1{
+            font-size: 1.5rem;
+            text-align: center;
+            
+        }
+        .message p {
+            font-size: 1.1rem;
+        }
+        .bubble{
+            width: 30%;
+            }
+    }
+   
+    
+   
+
+    .human-robot{
+        height: auto;
+        width: 100%;
+        display: block;
+        padding-bottom: 150px;
+    }
+     
+    .news{
+        width: 55%;
+        justify-content: center;
+        align-items: center;
+    }
+    .human-robot .bubble2{
+        width: 30%;
+        position: absolute;
+        top: 690px;
+    }
+
+    .robotic-technologies .bubble5{
+        width: 30%;
+        position: absolute;
+        top: 1260px;
+    }
+    .robo-hand{
+        width: 40%;
+    }
+    
+   
+}
+
+
+@media only screen and (max-width: 992px){
+    .background .bubble{
+        width: 40%;
+    }
+
+    .perspectives .ai{
+        width: 70%;
+        height: auto;
+        
+    }
+    .perspectives{
+        display: block;
+    }
+    .quote{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 768px){
+    .background .bubble{
+        width: 35%;
+    }
+
+    .quote{
+        height: auto;
+    }
+    .robotic-technologies{
+        height: auto;
+        // width: auto;
+    }
+    
+    
+    .robotic-technologies .skills{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:15px;
+    
+
+    }
+    
+    .skills img{
+        width: 60%;
+        display: block;
+        
+    }
+    
+}
+
+
+@media only screen and (max-width: 576px){
+    .background .bubble{
+        width:55%;
+        position: absolute;
+        top: 65px;
+    }
+    .human-robot .bubble2{
+        width: 55%;
+        position: absolute;
+        top: 500;
+    }
+    .robotic-technologies .bubble5{
+        width: 40%;
+        position: absolute;
+        top: 1700px;
+    }
+    .quote p{
+        font-size: 1.1rem;
+    }
+    .perspectives{
+        font-size: 1rem;
+    }
+    .skills{
+        display: block;
+        margin: 0 auto;
+    }
+ }
